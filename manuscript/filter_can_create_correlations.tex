@@ -1,0 +1,100 @@
+\documentclass[11pt,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{geometry}
+
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=1.5cm,rmargin=1.5cm}
+
+\title{\textbf{The Filter Can Also Create Correlations: Invariance, Mathematical Homology, and the Induced Dependence Framework}}
+\author{\textbf{German Garcia} \\ \textit{Investigador Titular Independiente} \\ \small{\href{mailto:andrewgg19@gmail.com}{andrewgg19@gmail.com}}}
+\date{May 13, 2026}
+
+\begin{document}
+
+\maketitle
+
+\selectlanguage{spanish}
+\begin{abstract}
+Este trabajo demuestra formalmente cómo el proceso de filtrado de datos induce una correlación emergente, evidenciando una invarianza estructural en sistemas complejos. A través del Marco de Dependencia Inducida (Induced Dependence Framework), se unifican fenómenos aparentemente inconexos: desde las desigualdades de Bell en física cuántica (satélite Micius) hasta el colapso de modelos en inteligencia artificial (Model Collapse) y la deriva genética en biología de poblaciones. El marco conceptual introduce la Divergencia de Kullback-Leibler para cuantificar la deformación observacional provocada por criterios de descarte distributivo rígidos, proveyendo un estándar cuantitativo reproducible para la auditoría pericial y legal de datos.
+\end{abstract}
+
+\selectlanguage{english}
+\begin{abstract}
+This work formally demonstrates how the data filtering process induces an emerging correlation, revealing an underlying structural invariance across complex information systems. Through the Induced Dependence Framework, seemingly unrelated phenomena are unified: from Bell's inequalities in quantum physics (Micius satellite) to model collapse in artificial intelligence and genetic drift in population biology. The framework introduces Kullback-Leibler divergence to quantify the observational deformation caused by rigid distributional truncation criteria, providing a reproducible quantitative standard for forensic and legal data auditing.
+\end{abstract}
+
+\selectlanguage{english}
+
+\section{Introduction}
+Observable datasets rarely emerge directly from underlying probabilistic structures. Instead, they are shaped by accessibility constraints, detector thresholds, benchmark curation, retrieval systems, post-selection, and adaptive filtering processes. Traditional empiricism treats filtering operations as neutral protocols designed to isolate signal from ambient noise.
+
+However, this paper demonstrates that informative filtering is an active topological operator capable of generating emergent correlations that do not exist within the unconstrained natural state. By identifying a mathematical homology across quantum measurements, artificial intelligence feedback loops, and biological bottlenecks, we establish a unified framework for identifying and quantifying observational deformation.
+
+\section{Conceptual Framework}
+Let the Natural State of a complex system be represented by the probability distribution $D_N \sim P(R)$, where $R$ denotes the intrinsic phase space of the system. We define the Filtered Observable State as the conditional distribution resulting from an informative filtering operator $F$:
+\begin{equation}
+D_F \sim P(R \mid F = 1)
+\end{equation}
+
+The \textit{Observational Deformation} ($\Delta_{obs}$) is formally defined under the framework of optimal transport and information theory as the Kullback-Leibler (KL) divergence between the unconstrained natural state and the conditioned state:
+\begin{equation}
+\Delta_{obs} = \mathcal{D}_{KL}(D_N \parallel D_F) = \int_{R} P(R) \log\left(\frac{P(R)}{P(R \mid F=1)}\right) dR
+\end{equation}
+
+We establish that \textit{Induced Dependence} occurs strictly when the mutual information between the system's intrinsic variables and the filtering mechanism is non-zero:
+\begin{equation}
+I(R;F) > 0
+\end{equation}
+This condition renders the filter an active generator of emergent correlation rather than a passive or neutral observer.
+
+\section{Dynamic Observational Drift}
+In recursive or closed feedback-loop environments, the operational reference states do not remain static; they drift dynamically over time. The recursive degradation of the natural state under continuous filtering constraints is governed by the following state equation:
+\begin{equation}
+D_N(t+1) = D_N(t) + \alpha \Phi(F_t, R_t)
+\end{equation}
+Where $\alpha \in \mathbb{R}$ represents the rate of systemic absorption or learning, and $\Phi$ is the variance-truncation operator. This equation mathematically formalizes the structural collapse observed in closed systems: as $t \to \infty$, the global entropy $H(D_N)$ converges toward a degenerate local minimum, resulting in systemic homogeneity.
+
+Within this operational dynamics, the informative filter does not act as a passive sieve, but rather as an agent of probabilistic curvature over the Natural State. Filtering exerts a function analogous to mass within a tensorial fabric: the higher the informational density of the filter, the greater the generated Observational Deformation. Under this lens, the Neutral Point is redefined as a dynamic, non-absolute coordinate. This point shifts toward the center of the curvature induced by the filter, establishing an observational geodesic. Therefore, systemic stability does not depend on the absence of filters, but on the observer's capability to map the displacement of the Neutral Point relative to the Natural State.
+
+\section{Clone-Control Analysis}
+Clone-control systems are introduced as probabilistic surrogate ensembles designed for estimating observational deformation within partially observable environments. When the true natural distribution $D_N$ cannot be directly accessed due to systemic limitations, a parallel unconditioned clone ensemble $D_C$ must be maintained.
+
+Under the geometric interpretation of the framework, these clone structures operate as test particles launched into the gravitational field of the filter. By contrasting the structural trajectories and observing the divergence between multiple clones subjected to the same Observational Deformation, investigators can triangulate the exact position of the moving Neutral Point. If the clones exhibit a high dispersion or an accelerated convergence toward a specific state, the system reveals a critical Induced Dependence. This analysis allows investigators to isolate the exact fraction of correlation generated by the filter versus intrinsic systemic dynamics, predicting Probabilistic Drift without requiring the complete original unconditioned dataset.
+
+\section{Systemic Applications \& Homologies}
+
+\subsection{Bell-Type Controlled Systems}
+Bell-type experiments are reinterpreted here as highly controlled observational filtering environments rather than targets for the reinterpretation of quantum mechanics. In long-range entanglement distribution missions, such as those conducted via the Micius satellite \cite{yin2017satellite}, the post-selection of coincidences represents a real-world execution of the filter operator $F=1$. If the detection loophole or extraction criteria subset the phase space $R$ adaptively, the resulting violation of Bell inequalities emerges as a manifestation of $\Delta_{obs}$ rather than a non-local property intrinsic to the physical particles.
+
+\subsection{Ecological Accessibility Filtering}
+Ecological systems exhibit profound accessibility asymmetries capable of generating observable probabilistic deformation. Field sampling methods naturally screen out organisms based on scale, mobility, or localized niches. When population biologists analyze phenotypic distributions without accounting for the environment-as-a-filter, they measure an induced dependence that mimics selective adaptation pressures, confounding sampling bias with evolutionary drive.
+
+\subsection{AI Benchmark Drift \& Model Collapse}
+Artificial Intelligence systems develop acute benchmark deformation and dynamic observational drift through Reinforcement Learning from Human Feedback (RLHF), retrieval filtering, and synthetic-data feedback loops. When Large Language Models (LLMs) are trained recursively on internet data that has been curated or generated by prior models \cite{shumailov2024model}, the variance-truncation operator $\Phi$ eliminates the natural linguistic tail. Alignment by RLHF acts as an informational mass that warps the model's Natural State. Under high-restriction filters, the system's Neutral Point shifts toward over-protected states, producing an Observational Deformation where legitimate technical data is misclassified as noise or encryption. The model progressively suffers from Model Collapse, collapsing its output distribution until it loses functional diversity and utility.
+
+\subsection{Population Genetics Homology}
+The evolutionary biological equivalent of structural model collapse is found within population genetics, explicitly via extreme genetic drift, genetic bottlenecks, and the founder effect. When a breeding population undergoes strict geographic isolation or severe selective filtering, the available allele pool is truncated. The loss of genetic variance matches the exact mathematical degradation seen in autogenous AI systems; without external entropy or mutation influx to counter the filter, the system loses its evolutionary adaptability.
+
+\section{Forensic Auditing \& Legal Admissibility}
+The Induced Dependence Framework provides a clear analytical threshold for modern forensic data auditing and legal proceedings. In courtrooms relying heavily on algorithmically curated digital evidence, data peritals, or facial recognition databases, the legal admissibility of evidence must be conditioned on the quantification of its observational deformation.
+
+By applying the Induced Dependence Framework, forensic auditors can construct an objective threshold: if $\Delta_{obs}$ exceeds acceptable systemic tolerances, the evidence can be formally classified as a synthetic artifact generated by the selection infrastructure rather than a factual representation of the Natural State. This transforms data auditing from a qualitative debate into a mathematically reproducible forensic standard.
+
+\section{Conclusions \& Future Work}
+The Induced Dependence Framework provides a unified, operational geometry to understand how the act of filtering actively constructs systemic correlations. By identifying the mathematical homology between quantum post-selection, biological bottlenecks, and recursive AI degeneration, we demonstrate that structural deformation is an intrinsic property of informative boundaries rather than an isolated experimental error.
+
+Future work will focus on expanding the variance-truncation operator $\Phi$ into a continuous-time differential manifold, allowing the dynamic trajectory of the moving Neutral Point to be modeled under highly volatile, non-linear observational environments.
+
+\begin{thebibliography}{99}
+\bibitem{yin2017satellite} Yin, J., et al. (2017). Satellite-based entanglement distribution over 1200 kilometers. \textit{Science}, 356(6343), 1140-1144.
+\bibitem{shumailov2024model} Shumailov, I., et al. (2024). Model collapse deconstructs AI's recursive future. \textit{Nature}, 632, 1014--1020.
+\bibitem{kullback1951} Kullback, S., \& Leibler, R. A. (1951). On information and sufficiency. \textit{The Annals of Mathematical Statistics}, 22(1), 79-86.
+\end{thebibliography}
+
+\end{document}
