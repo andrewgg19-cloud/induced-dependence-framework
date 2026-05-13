@@ -1,0 +1,41 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python cache and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Temporary and generated files
+*.tmp
+*.temp
+*.log
+*.bak
+*.old
+
+# Document render intermediates
+manuscript/rendered_*/
+manuscript/*_rendered/
+
+# Large local-only data outputs
+data/
+outputs/
+results/raw/
+

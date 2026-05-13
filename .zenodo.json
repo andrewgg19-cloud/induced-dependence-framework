@@ -1,0 +1,25 @@
+{
+  "title": "Induced Dependence Scientific Program",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "description": "Initial research package for the Induced Dependence scientific program. The repository includes a master paper draft, formal definitions, mathematical foundations materials, a minimal simulation, conceptual figures, bibliography, licensing, and manuscript outputs.",
+  "creators": [
+    {
+      "name": "García, Germán"
+    }
+  ],
+  "keywords": [
+    "induced dependence",
+    "dependency transformation",
+    "complex systems",
+    "mathematical foundations",
+    "scientific modeling",
+    "observability"
+  ],
+  "license": "cc-by-4.0",
+  "version": "0.1.0",
+  "language": "eng",
+  "related_identifiers": [],
+  "notes": "Scientific writing, documentation, conceptual materials, and figures are licensed under CC BY 4.0. Code, simulations, notebooks, and software utilities are licensed under the MIT License."
+}
+

@@ -1,0 +1,179 @@
+# Induced Dependence: A General Framework for Context-Produced Dependency
+
+## Abstract
+
+Dependence is often treated as a relation that either exists intrinsically among components or appears as an empirical association in observed data. This paper introduces induced dependence as a third category: a dependency relation produced, amplified, revealed, or transformed by context, constraint, observation, intervention, or shared system conditions.
+
+The central claim is that many scientific systems cannot be fully understood by asking whether their components are dependent in isolation. Instead, dependence may arise from the conditions under which components are placed into relation, measured, constrained, or made comparable. This shift reframes dependence as a dynamic and context-sensitive feature of systems rather than a fixed property of variables alone.
+
+The paper develops a general vocabulary for induced dependence, distinguishes it from intrinsic dependence, observed dependence, correlation, confounding, and direct causation, and proposes criteria for identifying dependency transformations across conditions. It also outlines applications to Bell-type systems, ecological networks, AI observability, and mathematical foundations.
+
+## 1. Introduction
+
+Scientific explanation often depends on identifying relations among parts of a system. Variables correlate, organisms interact, measurements reveal structure, and interventions expose hidden connections. Across these cases, dependence is usually treated in one of two ways: either as an intrinsic relation already present among the components, or as an observed association detected through data.
+
+Both views are useful, but they leave a gap. In many systems, dependence is not simply waiting to be observed, nor is it fully explainable as a direct causal link between isolated components. Dependence can be produced by the conditions under which a system is arranged. It can be amplified by shared constraints, transformed by intervention, revealed by measurement, or made meaningful only within a particular context.
+
+This paper calls this phenomenon induced dependence.
+
+Induced dependence refers to a dependency relation that is produced, amplified, revealed, or transformed by context, constraint, observation, intervention, or shared system conditions. The framework does not deny intrinsic dependence, causal dependence, or statistical association. Instead, it adds a missing category for cases in which the dependency structure of a system changes because of the conditions under which the system is situated or examined.
+
+The need for this category appears across domains. In Bell-type systems, the structure of measurement conditions is inseparable from the correlations that become visible. In ecological systems, environmental pressures can create or intensify dependencies among species that were weakly coupled or independent under prior conditions. In AI observability, monitoring and evaluation can alter the behavior and apparent dependency structure of the systems they are meant to inspect. In mathematical modeling, constraints can induce relations among variables that are otherwise independent in a baseline state.
+
+The guiding thesis is simple: dependencies are not only found inside systems. Under the right conditions, they are also made.
+
+## 2. Formal Framework
+
+Let a system be represented as:
+
+```text
+S = (V, E, C)
+```
+
+where `V` is a set of components, variables, agents, or observables; `E` is a set of relations, interactions, or possible dependency edges among elements of `V`; and `C` is a set of contexts, constraints, observations, interventions, or operating conditions under which the system can be evaluated.
+
+Let:
+
+```text
+X, Y in V
+```
+
+represent two components or variables in the system.
+
+Let:
+
+```text
+B in C
+```
+
+represent a baseline condition, and let:
+
+```text
+I in C
+```
+
+represent an inducing condition.
+
+The baseline state is the reference condition against which dependency transformation is evaluated. The inducing condition may be a context, constraint, observation, intervention, environmental change, measurement arrangement, or shared system condition that changes the dependency structure of the system.
+
+Let:
+
+```text
+D_c(X, Y)
+```
+
+denote the dependency relation between `X` and `Y` under condition `c`. The meaning of `D_c` depends on the domain and formalism. It may represent statistical dependence, causal dependence, informational dependence, graph connectivity, dynamical coupling, contextual dependence, or structural constraint.
+
+A dependency transformation occurs when:
+
+```text
+D_B(X, Y) != D_I(X, Y)
+```
+
+This difference may involve the appearance, disappearance, strengthening, weakening, or reconfiguration of dependence.
+
+`X` and `Y` exhibit induced dependence under condition `I` relative to baseline `B` when:
+
+```text
+D_B(X, Y) != D_I(X, Y)
+```
+
+and the change in dependency relation is attributable to the inducing condition `I`.
+
+A compact representation is:
+
+```text
+ID_S(X, Y | B, I, D)
+```
+
+read as: `X` and `Y` exhibit induced dependence in system `S`, relative to baseline `B`, under inducing condition `I`, with respect to dependency relation `D`.
+
+## 3. Minimal Model
+
+The minimal model demonstrates how two variables that are independent under a baseline condition can become dependent under a shared constraint.
+
+Let:
+
+```text
+X, Y in {0, 1}
+```
+
+where `X` and `Y` are binary variables.
+
+Under baseline condition `B`, `X` and `Y` are sampled independently:
+
+```text
+P_B(X, Y) = P_B(X) P_B(Y)
+```
+
+In this condition, the expected dependency relation is:
+
+```text
+D_B(X, Y) ~= 0
+```
+
+when `D` is measured by mutual information.
+
+The inducing condition `I` imposes the shared constraint:
+
+```text
+X == Y
+```
+
+Only states satisfying this constraint are retained:
+
+```text
+(0, 0), (1, 1)
+```
+
+while the states:
+
+```text
+(0, 1), (1, 0)
+```
+
+are excluded.
+
+Under the baseline condition, all four joint states are possible and approximately equally likely. Under the inducing condition, only two joint states remain possible. Knowing `X` now determines `Y`, and knowing `Y` determines `X`.
+
+The dependency transformation is:
+
+```text
+D_B(X, Y) ~= 0
+D_I(X, Y) ~= 1
+```
+
+when `D` is empirical mutual information measured in bits.
+
+This dependence is not introduced by a direct causal arrow from `X` to `Y` or from `Y` to `X`. Instead, the dependence is induced by the shared constraint `X == Y`.
+
+![Minimal induced dependence model](../figures/minimal_model_diagram.svg)
+
+## 4. Core Claims
+
+The paper develops the following claims:
+
+1. Dependence can be induced.
+2. Induced dependence is distinct from observed dependence.
+3. Shared constraints can produce dependency.
+4. Observation can transform dependency structure.
+5. Intervention can create or reconfigure dependence.
+6. Induced dependence requires a baseline.
+7. Inducing conditions must be identified.
+8. Induced dependence is not equivalent to confounding.
+9. The framework is cross-domain.
+10. Formalization is possible.
+
+## 5. Research Program
+
+The master paper establishes the shared conceptual and formal language. Derived papers then develop domain-specific translations:
+
+- Bell-type systems, where measurement conditions and observed correlations provide a stress test for theories of dependence.
+- Ecological systems, where environmental pressures and perturbations can induce dependencies among populations, resources, and network structures.
+- AI observability, where monitoring and evaluation may reveal, distort, or induce dependency structures in complex AI systems.
+- Mathematical foundations, where the framework can be developed through probabilistic, graph-theoretic, information-theoretic, causal, or dynamical models.
+
+## 6. Next Work
+
+The next stage of the paper should add references, refine the formal criteria for attribution to the inducing condition, and develop at least one domain-specific example in greater depth.
+

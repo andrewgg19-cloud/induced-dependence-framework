@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use or reference this research program, please cite it as below."
+title: "Induced Dependence Scientific Program"
+type: dataset
+authors:
+  - family-names: "García"
+    given-names: "Germán"
+version: "0.1.0"
+date-released: "2026-05-13"
+abstract: >-
+  Initial research package for the Induced Dependence scientific program,
+  including the master paper draft, formal definitions, mathematical
+  foundations materials, a minimal simulation, conceptual figures,
+  bibliography, and manuscript outputs.
+keywords:
+  - induced dependence
+  - dependency transformation
+  - complex systems
+  - mathematical foundations
+  - scientific modeling
+  - observability
+license: "CC-BY-4.0 AND MIT"
+repository-artifact: "https://doi.org/10.5281/zenodo.TBD"
+

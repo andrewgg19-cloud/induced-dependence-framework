@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Minimal induced dependence model</title>
+  <desc id="desc">A comparison between a baseline condition where X and Y are independent and an inducing condition where the shared constraint X equals Y induces dependence.</desc>
+  <rect width="1200" height="640" fill="#f7f7f4"/>
+
+  <text x="600" y="58" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1f2933">Minimal Induced Dependence Model</text>
+  <text x="600" y="94" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#52606d">A shared constraint transforms the dependency relation between two variables.</text>
+
+  <rect x="70" y="140" width="480" height="390" rx="8" fill="#ffffff" stroke="#c9d1d9" stroke-width="2"/>
+  <text x="310" y="188" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#1f2933">Baseline Condition B</text>
+  <text x="310" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#52606d">X and Y are sampled independently</text>
+
+  <circle cx="210" cy="325" r="58" fill="#d9ecff" stroke="#2f80ed" stroke-width="3"/>
+  <text x="210" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1f2933">X</text>
+
+  <circle cx="410" cy="325" r="58" fill="#d9ecff" stroke="#2f80ed" stroke-width="3"/>
+  <text x="410" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1f2933">Y</text>
+
+  <line x1="278" y1="325" x2="342" y2="325" stroke="#9aa5b1" stroke-width="3" stroke-dasharray="9 9"/>
+  <text x="310" y="302" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#7b8794">no dependency</text>
+
+  <rect x="148" y="424" width="324" height="54" rx="6" fill="#f0f4f8" stroke="#d9e2ec"/>
+  <text x="310" y="458" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2933">D_B(X, Y) ~= 0 bits</text>
+
+  <rect x="650" y="140" width="480" height="390" rx="8" fill="#ffffff" stroke="#c9d1d9" stroke-width="2"/>
+  <text x="890" y="188" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#1f2933">Inducing Condition I</text>
+  <text x="890" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#52606d">Shared constraint: X == Y</text>
+
+  <circle cx="790" cy="325" r="58" fill="#e2f7dc" stroke="#27ae60" stroke-width="3"/>
+  <text x="790" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1f2933">X</text>
+
+  <circle cx="990" cy="325" r="58" fill="#e2f7dc" stroke="#27ae60" stroke-width="3"/>
+  <text x="990" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1f2933">Y</text>
+
+  <line x1="848" y1="325" x2="932" y2="325" stroke="#219653" stroke-width="5"/>
+  <polygon points="928,317 946,325 928,333" fill="#219653"/>
+  <polygon points="852,317 834,325 852,333" fill="#219653"/>
+  <text x="890" y="302" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#17643a">induced dependence</text>
+
+  <rect x="728" y="424" width="324" height="54" rx="6" fill="#eef8ee" stroke="#cdebd0"/>
+  <text x="890" y="458" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2933">D_I(X, Y) ~= 1 bit</text>
+
+  <path d="M560 335 C590 315, 610 315, 640 335" fill="none" stroke="#616e7c" stroke-width="3"/>
+  <polygon points="636,325 656,340 632,345" fill="#616e7c"/>
+  <text x="600" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#52606d">apply condition</text>
+
+  <text x="600" y="586" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#1f2933">D_B(X, Y) != D_I(X, Y)</text>
+  <text x="600" y="614" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#52606d">The dependency relation changes because of the inducing condition.</text>
+</svg>
+
