@@ -90,8 +90,7 @@ CITATION.cff
 Replace:
 
 ```text
-https://doi.org/10.5281/zenodo.TBD
+https://doi.org/10.5281/zenodo.20172257
 ```
 
 with the real Zenodo DOI URL.
-

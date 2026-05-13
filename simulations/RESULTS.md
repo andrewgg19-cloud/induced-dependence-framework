@@ -79,3 +79,43 @@ D_I(X, Y) ~= 1
 
 This is a minimal computational example of induced dependence.
 
+## Observational Deformation Under Truncation
+
+Script:
+
+```text
+simulations/observational_deformation_kl.py
+```
+
+### Model
+
+A natural Gaussian state `D_N` is filtered by a rigid lower truncation threshold. The filtered observable state `D_F` retains only values above the filter limit.
+
+Parameters:
+
+```text
+mu_nat = 0.0
+sigma_nat = 1.0
+limite_filtro = 0.5
+```
+
+### Latest Run
+
+```text
+Delta_obs = KL[D_F || D_N] = 1.1759 nats
+KL[D_N || D_F] = infinity
+H[D_F] = 0.5283 nats
+Variance destroyed by filter = 0.7315
+```
+
+### Interpretation
+
+When the filter removes part of the support of the natural distribution, `KL[D_N || D_F]` becomes infinite because the filtered distribution assigns zero probability to states that remain possible under the natural state.
+
+For reproducible finite diagnostics, this simulation reports:
+
+```text
+Delta_obs = KL[D_F || D_N]
+```
+
+This measures how much the filtered observable state diverges from the natural state after truncation.
