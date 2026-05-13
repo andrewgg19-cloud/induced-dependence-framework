@@ -14,6 +14,9 @@ This repository organizes the core manuscript, derived papers, simulations, and 
 - `figures/` - Conceptual diagrams, manuscript figures, and generated visual outputs.
 - `references/` - Bibliography files and citation sources.
 - `manuscript/` - Exportable manuscript versions such as Word, PDF, or LaTeX outputs.
+- `src/` - Operational diagnostic code and reusable framework scripts.
+- `docs/` - Extended notes, appendices, and methodological documentation.
+- `poster/` - Generated forensic reports and reproducible diagnostic outputs.
 
 ## Working Principle
 

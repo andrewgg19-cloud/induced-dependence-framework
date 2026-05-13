@@ -18,3 +18,4 @@ Simulations should provide concrete examples, stress tests, and visual evidence 
 
 - `minimal_induced_dependence.py` - Demonstrates two independent binary variables becoming dependent under a shared constraint.
 - `observational_deformation_kl.py` - Estimates KL-based observational deformation induced by a rigid truncation filter.
+- `../src/diagnostico_logs.py` - Unified operational diagnostic with regularized KL, hard-sieve infinity alarm, and Dual-Clone sensitivity logging.
