@@ -30,6 +30,51 @@ The first integrated draft of the master paper is available at `master_paper/DRA
 
 Citation metadata is provided in `CITATION.cff`. The initial planned release version is `v0.1.0`.
 
+## One-Click Cloning and Forensic Replicability
+
+This repository provides an automated validation engine designed to allow external laboratories to test datasets against filter-induced artifacts and autogenous model collapse.
+
+### Execution Pipeline
+
+Execute this terminal sequence to clone the codebase, verify the environment, and render the analytical figures:
+
+```bash
+# 1. Clone the verified open-science core repository
+git clone https://github.com/andrewgg19-cloud/induced-dependence-framework.git
+
+# 2. Open the operational repository directory
+cd induced-dependence-framework
+
+# 3. Install runtime dependencies if needed
+pip install numpy pandas pillow
+
+# 4. Execute the diagnostic pipeline and compile structural charts
+python src/diagnostico_logs.py
+```
+
+### Compiled Evidence Artifacts
+
+Upon successful execution, the core script automatically generates the following forensic files within the workspace:
+
+- `poster/deformacion_observacional.png` - High-resolution scatter plot illustrating the shifting of the neutral point and emergent covariance.
+- `poster/reporte_sensibilidad_forense.csv` - Chronological audit logs recording the generation where selection constraints trigger support truncation (`Delta_obs -> infinity`).
+
+### Standardized Citation Profile
+
+If this codebase, the standalone script `diagnostico_logs.py`, or the underlying propositions assist in corroborating data structures or certifying AI compliance under regulatory standards, please acknowledge the author via the following academic record:
+
+```bibtex
+@article{garcia2026filter,
+  author    = {Garcia, German},
+  title     = {The Filter Can Also Create Correlations: Invariance, Mathematical Homology, and the Induced Dependence Framework},
+  journal   = {Zenodo Open Science Repository},
+  year      = {2026},
+  doi       = {10.5281/zenodo.20172257},
+  url       = {https://doi.org/10.5281/zenodo.20172257},
+  note      = {Version 1.1.0 -- Hard Sieve Validation Engine}
+}
+```
+
 ## License
 
 Scientific writing, documentation, conceptual materials, and figures are licensed under CC BY 4.0. Code, simulations, notebooks, and software utilities are licensed under the MIT License.
