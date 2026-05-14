@@ -79,4 +79,6 @@ If this codebase, the standalone script `diagnostico_logs.py`, or the underlying
 
 Scientific writing, documentation, conceptual materials, and figures are licensed under CC BY 4.0. Code, simulations, notebooks, and software utilities are licensed under the MIT License.
 
+Professional, forensic, regulatory, compliance, legal, commercial, institutional, or protocol-level integration of the Induced Dependence Framework is covered by the professional-use policy in `COMMERCIAL_USE.md`.
+
 See `LICENSE.md` for details.
