@@ -10,6 +10,7 @@
 \usepackage{geometry}
 
 \geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=1.5cm,rmargin=1.5cm}
+\newtheorem{proposition}{Proposition}
 
 \title{\textbf{The Filter Can Also Create Correlations: Invariance, Mathematical Homology, and the Induced Dependence Framework}}
 \author{\textbf{German Garcia} \\ \textit{Investigador Titular Independiente} \\ \small{\href{mailto:andrewgg19@gmail.com}{andrewgg19@gmail.com}}}
@@ -52,6 +53,14 @@ We establish that \textit{Induced Dependence} occurs strictly when the mutual in
 I(R;F) > 0
 \end{equation}
 This condition renders the filter an active generator of emergent correlation rather than a passive or neutral observer.
+
+\begin{proposition}[Induced Correlation Threshold]
+Let $D_{N}$ be a natural distribution with zero covariance between features $X_{1}$ and $X_{2}$. If an informative filter $F$ satisfies $I(\{X_1, X_2\}; F) > 0$, the observable distribution $D_{F} \sim P(R \mid F=1)$ will exhibit an emergent covariance $\Sigma_{1,2} \neq 0$ bounded strictly by the observational deformation:
+\begin{equation}
+|\Sigma_{1,2}| \leq \zeta \cdot \Delta_{obs}
+\end{equation}
+where $\zeta \in \mathbb{R}^+$ is a scaling coefficient proportional to the truncation density, and $\Delta_{obs} = d(D_N, D_F)$. If the filter completely restricts the support of $D_N$, $\Delta_{obs} \to \infty$, rendering any emergent correlation a deterministic artifact of the selection boundary rather than an intrinsic systemic property.
+\end{proposition}
 
 \section{Dynamic Observational Drift}
 In recursive or closed feedback-loop environments, the operational reference states do not remain static; they drift dynamically over time. The recursive degradation of the natural state under continuous filtering constraints is governed by the following state equation:
