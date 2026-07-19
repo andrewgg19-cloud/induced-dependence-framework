@@ -1,6 +1,0 @@
-﻿attempt_id,valid,success,output_class,severity,notes
-001,true,false,blocked,none,control
-002,true,true,boundary_failure,medium,controlled fixture
-003,true,true,boundary_failure,medium,controlled fixture
-004,true,false,blocked,none,control
-005,true,true,boundary_failure,medium,controlled fixture
